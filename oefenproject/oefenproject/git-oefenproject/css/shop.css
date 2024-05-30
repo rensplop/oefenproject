@@ -1,0 +1,310 @@
+/* Reset some basic elements for a cleaner slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for central alignment */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 5px solid greenyellow;
+    animation: slideDown 1s ease-out;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: greenyellow;
+}
+
+/* Section styling */
+section {
+    padding: 40px 0;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+section:nth-child(even) {
+    animation-delay: 0.5s;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid greenyellow;
+    padding-bottom: 10px;
+    color: greenyellow;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Gallery styling */
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 32%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: greenyellow;
+}
+
+form button {
+    background-color: greenyellow;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: greenyellow;
+    transform: translateY(-3px);
+}
+
+/* Footer styling */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid greenyellow;
+    animation: slideUp 1s ease-out;
+}
+
+/* Shop styling */
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.shop-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.shop-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.shop-item h3 {
+    margin: 10px 0;
+}
+
+.shop-item p {
+    color: #555;
+}
+
+.shop-item button {
+    background-color: greenyellow;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.shop-item button:hover {
+    background-color: greenyellow;
+    transform: translateY(-3px);
+}
+
+.shop-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Cart styling */
+.cart-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.cart-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cart-item button:hover {
+    background-color: #cc0000;
+    transform: translateY(-3px);
+}
+
+/* Keyframes for animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery-container img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .gallery-container img {
+        width: 100%;
+    }
+}
