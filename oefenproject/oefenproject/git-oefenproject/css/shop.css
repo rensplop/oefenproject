@@ -9,7 +9,7 @@
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #f7f7f7;
-    color: #333;
+    color: green;
     line-height: 1.6;
 }
 
@@ -22,7 +22,7 @@ body {
 /* Header styling */
 header {
     background-color: #1a1a1a;
-    color: #fff;
+    color: green;
     padding: 20px 0;
     border-bottom: 5px solid greenyellow;
     animation: slideDown 1s ease-out;
@@ -46,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: green;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -128,7 +128,7 @@ form input:focus, form textarea:focus {
 
 form button {
     background-color: greenyellow;
-    color: #fff;
+    color: green;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -141,7 +141,7 @@ form button:hover {
 /* Footer styling */
 footer {
     background-color: #1a1a1a;
-    color: #fff;
+    color: green;
     text-align: center;
     padding: 20px 0;
     border-top: 5px solid greenyellow;
@@ -181,7 +181,7 @@ footer {
 
 .shop-item button {
     background-color: greenyellow;
-    color: #fff;
+    color: green;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -235,7 +235,7 @@ footer {
 
 .cart-item button {
     background-color: #ff0000;
-    color: #fff;
+    color: green;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
